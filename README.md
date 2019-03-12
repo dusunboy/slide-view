@@ -1,6 +1,6 @@
 # slide-view
 
-小程序自定义组件
+小程序自定义组件(侧滑组件)
 
 > 使用此组件需要依赖小程序基础库 2.2.1 以上版本，同时依赖开发者工具的 npm 构建。具体详情可查阅[官方 npm 文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)。
 
@@ -49,3 +49,4 @@ npm install --save miniprogram-slide-view
 | width                   | Number       | rpx          | 显示屏幕的宽度             | 是          | slide-view组件的宽度                        |
 | height                  | Number       | rpx          | 0                         | 是          | slide-view组件的高度                        |
 | slide-width             | Number       | rpx          | 0                         | 是          | 滑动展示区域的宽度（默认高度与slide-view相同）|
+| isCloseSlide             | Boolean       |           | false                         | 否          | 是否关闭右侧滑按钮 |

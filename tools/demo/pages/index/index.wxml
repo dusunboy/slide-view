@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view  class='slide'>
-  <slide-view width="750" height="110" slide-width="500">
+  <slide-view width="750" height="110" slide-width="500" isCloseSlide="{{isCloseSlide}}">
   <view slot="left" class="l">
     <image src="/pages/image/file_transfer.jpg" class="img"></image>
     <view class='text'>
@@ -9,7 +9,7 @@
     </view>
   </view>
   <view slot="right" class="r">
-    <view class='read'>标为已读</view>
+    <view class='read' bindtap="closeSlide">标为已读</view>
     <view class='delete'>删除</view>
   </view>
 </slide-view>

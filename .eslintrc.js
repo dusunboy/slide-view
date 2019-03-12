@@ -46,6 +46,7 @@ module.exports = {
     'no-catch-shadow': 'error',
     'no-continue': 'off',
     'no-div-regex': 'warn',
+    'no-unused-vars': 'warn',
     'no-else-return': 'off',
     'no-param-reassign': 'off',
     'no-plusplus': 'off',
@@ -91,5 +92,6 @@ module.exports = {
     'Component': true,
     'Behavior': true,
     'wx': true,
+    'getCurrentPages': true,
   }
 }

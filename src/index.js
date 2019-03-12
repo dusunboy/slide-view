@@ -22,6 +22,19 @@ Component({
     slideWidth: {
       type: Number,
       value: 0
+    },
+    // 是否关闭右侧滑按钮
+    isCloseSlide: {
+      type: Boolean,
+      value: false,
+      observer(newVal, oldVal, changedPath) {
+        if (newVal) {
+          this.setData({
+            x: 0,
+            isCloseSlide: false
+          })
+        }
+      }
     }
   },
 
@@ -34,6 +47,8 @@ Component({
     x: 0,
     //  movable-view是否可以出界
     out: false,
+    // 是否关闭右侧滑按钮
+    isCloseSlide: false,
   },
 
   /**
